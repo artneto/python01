@@ -39,25 +39,31 @@ if computador == 0:#se o computador jogou pedra
     else:
         print('Jogada invalida')
 
-if computador == 1:#se o computador jogou papel
-    if jogador == 1:
+elif computador == 1:#se o computador jogou papel
+    if jogador == 0:
         print('EMPATE')
     
     elif jogador == 1:
-        print('Jogador Venceu')
+        print('Jogador vence')
+    
+    elif jogador == 2:
+        print('computador venceu')
     
     else:
         print('Jogada invalida')
 
-if computador ==2: #se o computador jogou tesoura
-    if jogador == 2:
-        print('Empate')
+elif computador ==2: #se o computador jogou tesoura
+    if jogador == 0:
+        print('EMPATE')
+    
+    elif jogador == 1:
+        print('Jogador vence')
     
     elif jogador == 2:
-        print('Jogador Venceu')
+        print('computador venceu')
     
     else:
-        print('Jogada Invalida')
+        print('Jogada invalida')
 
 
 
