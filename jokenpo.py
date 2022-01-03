@@ -11,6 +11,8 @@ print('''Suas opcoes:
 [2]tesoura''')
 #Ojogador faz a jogada
 jogador = int(input('Qual e a sua jogada?: '))
+if jogador != 0 and jogador != 1 and jogador != 2:
+    print('JOGADA INVÁLIDA. Tente novamente!')
 #usar o sleep para cadenciar a apresentação do nome do jogo, e no final
 print('JO')
 sleep(1)
@@ -28,42 +30,33 @@ print('-=' * 11)
 #montar estruturas condicionais para apresentar os resultados
 if computador == 0:#se o computador jogou pedra
     if jogador == 0:
-        print('EMPATE')
-    
-    elif jogador == 1:
-        print('Jogador vence')
-    
+        print('EMPATOU')
+    elif jogador ==1:
+        print('jogador vence')
     elif jogador == 2:
-        print('computador venceu')
-    
+        print('computador vence')  
     else:
-        print('Jogada invalida')
+        print('JOGADA INVALIDA')
 
-elif computador == 1:#se o computador jogou papel
+elif computador == 1: #computador jogou papel
     if jogador == 0:
-        print('EMPATE')
-    
-    elif jogador == 1:
-        print('Jogador vence')
-    
+        print('EMPATOU')
+    elif jogador ==1:
+        print('jogador vence')
     elif jogador == 2:
-        print('computador venceu')
-    
+        print('computador vence')  
     else:
-        print('Jogada invalida')
+        print('JOGADA INVALIDA')
 
-elif computador ==2: #se o computador jogou tesoura
+elif computador == 2:# computador jogo tesoura
     if jogador == 0:
-        print('EMPATE')
-    
-    elif jogador == 1:
-        print('Jogador vence')
-    
+        print('EMPATOU')
+    elif jogador ==1:
+        print('jogador vence')
     elif jogador == 2:
-        print('computador venceu')
-    
+        print('computador vence')  
     else:
-        print('Jogada invalida')
+        print('JOGADA INVALIDA')
 
 
 
